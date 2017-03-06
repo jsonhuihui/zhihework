@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ripple_list_red" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@+id/shop_name" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="巴弟鸡排" android:drawableLeft="@drawable/order06" android:drawablePadding="5.0dip" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/red" android:id="@+id/tv_order_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="待付款" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:lineSpacingExtra="4.0dip" />
+        </RelativeLayout>
+        <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/ill_order" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@+id/lv_order_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="13.0dip" android:listSelector="#00000000" android:divider="#ffe5e5e5" android:dividerHeight="0.5dip" />
+        </LinearLayout>
+        <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="8.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总金额：" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/red" android:gravity="center_vertical" android:layout_gravity="right|center" android:id="@+id/tv_should_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥45.67" />
+        </LinearLayout>
+        <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="8.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="center" android:layout_gravity="right|center" android:id="@+id/tv_cancel" android:background="@drawable/bt_bg3" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="取消订单" />
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="right|center" android:id="@+id/tv_pay" android:background="@drawable/ripple_click_bg" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="付款" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

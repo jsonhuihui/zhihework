@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/start_main_pop"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="45.0dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="58.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="#ffffffff"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/start_main_linearLayout1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="#fff6f6f6"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="3.0dip"
+                    android:paddingTop="3.0dip" >
+
+                    <ImageView
+                        android:id="@+id/start_main_image01"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/fragment_home_choose" />
+
+                    <TextView
+                        android:id="@+id/start_main_text01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3.0dip"
+                        android:text="首页"
+                        android:textColor="#ff1d213b"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/start_main_linearLayout2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#fff6f6f6"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/start_main_image02"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/fragment_money" />
+
+                    <TextView
+                        android:id="@+id/start_main_text02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3.0dip"
+                        android:text="一键付款"
+                        android:textColor="#ff888888"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/start_main_linearLayout3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#fff6f6f6"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/start_main_image03"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/fragment_time" />
+
+                    <TextView
+                        android:id="@+id/start_main_text03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3.0dip"
+                        android:text="一键考勤"
+                        android:textColor="#ff888888"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/start_main_linearLayout4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#fff6f6f6"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="3.0dip"
+                    android:paddingTop="3.0dip" >
+
+                    <ImageView
+                        android:id="@+id/start_main_image04"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/fragment_set" />
+
+                    <TextView
+                        android:id="@+id/start_main_text04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3.0dip"
+                        android:text="我的智核"
+                        android:textColor="#ff888888"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

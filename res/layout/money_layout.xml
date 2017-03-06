@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_activity_pop"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dp"
+        android:background="@color/title_color" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="余额"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@+id/regis_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_back_normal" />
+
+        <TextView
+            android:id="@+id/money_mingxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dp"
+            android:background="@drawable/bt_bg2"
+            android:paddingBottom="4.0dp"
+            android:paddingLeft="6.0dp"
+            android:paddingRight="6.0dp"
+            android:paddingTop="4.0dp"
+            android:text="消费明细"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/main_srl_view"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dp"
+                android:background="#3CB371" >
+
+                <!-- <ImageView
+                    android:layout_width="80.0dp"
+                    android:layout_height="80.0dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/mingxi_money" /> -->
+
+                <TextView
+                    android:id="@+id/bzmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="40.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bzmoney"
+                    android:layout_centerHorizontal="true"
+                    android:text="补助金额(元)"
+                    android:textColor="#fff"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dp"
+                android:background="#FFD700" >
+
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="40.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/money"
+                    android:layout_centerHorizontal="true"
+                    android:text="余额(元)"
+                    android:textColor="#fff"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100.0dp" >
+
+            <ImageButton
+                android:id="@+id/money_bt"
+                android:layout_width="280.0dp"
+                android:layout_height="45.0dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/mignxi_button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="充值"
+                android:textColor="#ffffffff"
+                android:textSize="17.0sp" />
+        </RelativeLayout>
+
+</LinearLayout>

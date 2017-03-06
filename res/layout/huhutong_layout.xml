@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/title_color"
+        android:paddingRight="20.0dip" >
+
+        <ImageView
+            android:id="@+id/regis_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_back_normal" />
+
+        <TextView
+            android:id="@+id/login_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="工作对讲"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:background="#ffffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip" >
+
+            <EditText
+                android:id="@+id/edtNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="45.0dip"
+                android:background="#ffffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="5.0dip"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#ff63d91a"
+                android:textSize="23.0sp" />
+
+            <ImageView
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/huhudelete" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/huhu1_selector"
+                    android:gravity="center"
+                    android:tag="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/huhu1_selector2"
+                    android:gravity="center"
+                    android:tag="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/huhu1_selector3"
+                    android:gravity="center"
+                    android:tag="3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/huhu1_selector4"
+                    android:gravity="center"
+                    android:tag="4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/huhu1_selector5"
+                    android:gravity="center"
+                    android:tag="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/huhu1_selector6"
+                    android:gravity="center"
+                    android:tag="6" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/huhu1_selector7"
+                    android:gravity="center"
+                    android:tag="7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/huhu1_selector8"
+                    android:gravity="center"
+                    android:tag="8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/huhu1_selector9"
+                    android:gravity="center"
+                    android:tag="9" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_xin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/huhu1_selectorxin"
+                    android:gravity="center"
+                    android:tag="*" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/huhu1_selector0"
+                    android:gravity="center"
+                    android:tag="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_jin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/huhu1_selectorjin"
+                    android:gravity="center"
+                    android:tag="\#" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="15.0dip" >
+
+            <ImageView
+                android:id="@+id/huhubohao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/huhubohao"
+                android:tag="*" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/shiyongzhinan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/helpbtn"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="使用指南"
+                android:textColor="#ff686872" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

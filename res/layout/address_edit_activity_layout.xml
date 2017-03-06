@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff8f8f8"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/index_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/theme_color" >
+
+        <ImageView
+            android:id="@+id/regis_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_back_normal" />
+
+        <TextView
+            android:id="@+id/regis_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="收货地址"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/index_top_layout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="12.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:lineSpacingExtra="4.0dip"
+                        android:text="收货人:"
+                        android:textColor="#ff727272"
+                        android:textSize="15.0sp" />
+
+                    <EditText
+                        android:id="@+id/et_consignee"
+                        android:layout_width="150.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_marginRight="3.0dip"
+                        android:background="#fff8f8f8"
+                        android:lineSpacingExtra="4.0dip"
+                        android:maxLength="15"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffefefef"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="12.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="联系电话:"
+                        android:textColor="#ff727272"
+                        android:textSize="15.0sp"
+                        android:typeface="sans" />
+
+                    <EditText
+                        android:id="@+id/et_contact"
+                        android:layout_width="150.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3.0dip"
+                        android:layout_marginRight="3.0dip"
+                        android:background="#fff8f8f8"
+                        android:lineSpacingExtra="4.0dip"
+                        android:maxLength="15"
+                        android:numeric="integer"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="#ffefefef" />
+
+            <LinearLayout
+                android:id="@+id/lin_select_contact"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_myaccount_head_setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:lineSpacingExtra="4.0dip"
+                    android:text="选联系人"
+                    android:textColor="#ff727272"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ffefefef"
+            android:gravity="center_vertical"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_zip_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="4.0dip"
+                android:text="邮政编码:"
+                android:textColor="#ff727272"
+                android:textSize="15.0sp" />
+
+            <EditText
+                android:id="@+id/et_zip_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip"
+                android:layout_toRightOf="@+id/tv_zip_code"
+                android:background="#fff8f8f8"
+                android:lineSpacingExtra="4.0dip"
+                android:textSize="15.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ffefefef"
+            android:gravity="center_vertical" />
+
+        <RelativeLayout
+            android:id="@+id/rel_region"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="4.0dip"
+                android:text="所在地区:"
+                android:textColor="#ff727272"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/et_region"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip"
+                android:layout_toRightOf="@+id/tv_region"
+                android:background="#fff8f8f8"
+                android:lineSpacingExtra="4.0dip"
+                android:textSize="15.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/more_img" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ffefefef"
+            android:gravity="center_vertical" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_details_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="4.0dip"
+                android:text="详细地址:"
+                android:textColor="#ff727272"
+                android:textSize="15.0sp" />
+
+            <EditText
+                android:id="@+id/et_details_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip"
+                android:layout_toRightOf="@+id/tv_details_address"
+                android:background="#fff8f8f8"
+                android:lineSpacingExtra="4.0dip"
+                android:textSize="15.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ffefefef"
+            android:gravity="center_vertical" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_set_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="4.0dip"
+                android:text="设为默认地址"
+                android:textColor="#ff727272"
+                android:textSize="15.0sp" />
+
+            <com.zorgoom.zhihework.view.SwitchButton
+                android:id="@+id/sb_set_default"
+                android:layout_width="66.0dip"
+                android:layout_height="44.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:lineSpacingExtra="4.0dip" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ffefefef"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_view"
+        android:background="#fff8f8f8"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/ripple_click_bg"
+            android:gravity="center"
+            android:lineSpacingExtra="4.0dip"
+            android:text="保存并使用"
+            android:textColor="@color/white"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+</RelativeLayout>

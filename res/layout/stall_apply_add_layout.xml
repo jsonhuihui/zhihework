@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/theme_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@+id/regis_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/base_action_bar_back_normal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@+id/regis_register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="申请车位信息" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff373737" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="车  牌  号" />
+        <EditText android:textSize="13.0sp" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@+id/et_number" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:hint="请输入车牌号" />
+    </LinearLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff373737" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="住房信息" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/et_time" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="房屋" android:inputType="number" />
+    </LinearLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff373737" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="备注说明" />
+        <EditText android:textSize="13.0sp" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@+id/et_remark" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:hint="50字以内" />
+    </LinearLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/tv_sumbut" android:background="@drawable/ripple_click_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="20.0dip" android:text="提交" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/theme_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@+id/regis_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/base_action_bar_back_normal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@+id/regis_register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="维修申报" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@+id/add_maintain" android:background="@drawable/bt_bg2" android:paddingLeft="6.0dip" android:paddingTop="4.0dip" android:paddingRight="6.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="新建" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/main_srl_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@+id/message_listView1" android:background="#ffffffff" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#ffe5e5e5" android:dividerHeight="0.5dip" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

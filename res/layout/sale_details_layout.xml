@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/main_srl_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.zorgoom.zhihework.view.ObservableScrollView android:id="@+id/sv_sale" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.5dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="vertical" android:id="@+id/top_layout" android:background="@drawable/sale_details_bg" android:layout_width="fill_parent" android:layout_height="180.0dip">
+                    <com.zorgoom.zhihework.view.CircleImageView android:id="@+id/logo" android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@+id/logo" android:layout_centerVertical="true">
+                        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="巴弟鸡排（恒达百汇店）" />
+                        <TextView android:textSize="16.0sp" android:textColor="#ffcb8224" android:id="@+id/announcement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="公告：欢迎光临巴弟鸡排" />
+                    </LinearLayout>
+                    <TextView android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="------------------------------------------------------------------------------------------------------------------------------------------" android:maxLines="1" android:layout_above="@+id/activity_layout" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/activity_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/shou" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/icon03" />
+                        <TextView android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="新用户立减12元，" android:maxLines="1" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:background="#fff3f4f3" android:layout_width="110.0dip" android:layout_height="500.0dip">
+                        <ListView android:id="@+id/sale_listView1" android:scrollbars="none" android:layout_width="110.0dip" android:layout_height="wrap_content" android:divider="#ffe5e5e5" android:dividerHeight="0.5dip" />
+                    </LinearLayout>
+                    <ListView android:id="@+id/sale_listView2" android:background="#ffffffff" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#ffe5e5e5" android:dividerHeight="0.5dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.zorgoom.zhihework.view.ObservableScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <RelativeLayout android:id="@+id/title_layout" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@+id/regis_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/base_action_bar_back_normal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@+id/sale_register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="社区商圈" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.5dip" android:layout_alignParentBottom="true">
+        <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:id="@+id/distribution_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="78.0dip" android:layout_marginBottom="3.0dip" android:text="配送费以订单为准" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/distribution_iv" android:background="@color/sale_select_pay" android:layout_width="130.0dip" android:layout_height="fill_parent" android:text="立即购买" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/cart_layout" android:background="@drawable/car_yuan" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@+id/num" android:background="@drawable/car_text_yuan" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:text="1" android:layout_alignParentRight="true" />
+        <TextView android:background="@drawable/cart2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@+id/cart_anim_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cart_anim_icon" android:layout_centerInParent="true" />
+</RelativeLayout>

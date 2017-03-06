@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeeeeee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/theme_color" >
+
+        <ImageView
+            android:id="@+id/regis_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_back_normal" />
+
+        <TextView
+            android:id="@+id/regis_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="联系物业"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/main_srl_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/message_listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:divider="#ffe5e5e5"
+            android:dividerHeight="0.5dip"
+            android:scrollbars="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

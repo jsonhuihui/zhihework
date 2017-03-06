@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_transparent"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20.0dip"
+                android:text="请选择省市区"
+                android:textColor="#ff898989"
+                android:textSize="20.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:orientation="horizontal" >
+
+            <com.zorgoom.zhihework.view.city.WheelView
+                android:id="@+id/id_province"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <com.zorgoom.zhihework.view.city.WheelView
+                android:id="@+id/id_city"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <com.zorgoom.zhihework.view.city.WheelView
+                android:id="@+id/id_district"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ff000000" />
+    </LinearLayout>
+
+</RelativeLayout>

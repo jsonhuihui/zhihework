@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeeeeee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/theme_color" >
+
+        <ImageView
+            android:id="@+id/regis_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_back_normal" />
+
+        <TextView
+            android:id="@+id/regis_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="邻里圈"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/mRefreshLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/circleLv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="0.0px"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0.0dip"
+                android:focusable="true"
+                android:listSelector="@android:color/transparent"
+                android:transcriptMode="normal" />
+
+            <LinearLayout
+                android:id="@+id/editTextBodyLl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#fff6f6f6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8.0dip"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/circleEt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:hint="说点什么..." />
+
+                <TextView
+                    android:id="@+id/sendTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_marginRight="6.0dip"
+                    android:background="@android:color/white"
+                    android:padding="8.0dip"
+                    android:text="发送"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

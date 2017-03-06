@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/background3" >
+
+            <TextView
+                android:id="@+id/main1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffffff"
+                android:textSize="13.0dip" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6.0dip"
+                android:layout_toLeftOf="@+id/main1"
+                android:src="@drawable/logo"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+   <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/main_srl_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.zorgoom.zhihework.base.ImageCycleView
+                    android:id="@+id/main_imageView03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="140.0dip"
+                    android:background="@drawable/background2" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/background4"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15.0dip" >
+
+                        <LinearLayout
+                            android:id="@+id/layout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal" >
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <ImageButton
+                                    android:id="@+id/id1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/background01" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|left|center"
+                                    android:layout_marginBottom="3.0dip"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:text="我的考勤"
+                                    android:textColor="#ffffffff"
+                                    android:textSize="18.0sp" />
+
+                                <ImageView
+                                    android:id="@+id/iv1"
+                                    android:layout_width="60.0dip"
+                                    android:layout_height="60.0dip"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="12.0dip"
+                                    android:src="@drawable/main_clock" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <ImageButton
+                                    android:id="@+id/id2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/background002" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|right|center"
+                                    android:layout_marginBottom="3.0dip"
+                                    android:layout_marginRight="10.0dip"
+                                    android:text="我的消费"
+                                    android:textColor="#ffffffff"
+                                    android:textSize="18.0sp" />
+
+                                <ImageView
+                                    android:id="@+id/iv2"
+                                    android:layout_width="60.0dip"
+                                    android:layout_height="60.0dip"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="12.0dip"
+                                    android:src="@drawable/main_pay" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout1"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal" >
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <ImageButton
+                                    android:id="@+id/id3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/background004" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:layout_marginTop="3.0dip"
+                                    android:text="我的WIFI"
+                                    android:textColor="#ffffffff"
+                                    android:textSize="18.0sp" />
+
+                                <ImageView
+                                    android:id="@+id/iv3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="12.0dip"
+                                    android:src="@drawable/wifi2" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <ImageButton
+                                    android:id="@+id/id4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/background003" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="9.0dip"
+                                    android:layout_marginTop="5.0dip"
+                                    android:text="我的工作"
+                                    android:textColor="#ffffffff"
+                                    android:textSize="18.0sp" />
+
+                                <ImageView
+                                    android:id="@+id/iv4"
+                                    android:layout_width="70.0dip"
+                                    android:layout_height="70.0dip"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="12.0dip"
+                                    android:src="@drawable/main_mobile" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/bt1"
+                            android:layout_width="80.0dip"
+                            android:layout_height="40.0dip"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/key" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

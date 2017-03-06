@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/title_color" >
+
+        <ImageView
+            android:id="@+id/regis_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_back_normal" />
+
+        <TextView
+            android:id="@+id/regis_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="出勤统计"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:background="#ffeeeeee" >
+
+        <TextView
+            android:id="@+id/message_textView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2016年09月"
+            android:textColor="#ff6e6a69"
+            android:textSize="13.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="47.0dip"
+                android:background="@drawable/ripple_list_red"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="出勤天数"
+                    android:textColor="#ff757575"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="26天"
+                    android:textColor="#ff757575" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ffe5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="47.0dip"
+                android:background="@drawable/ripple_list_red"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="矿工天数"
+                    android:textColor="#ff757575"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="1天"
+                    android:textColor="#ff757575" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ffe5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="47.0dip"
+                android:background="@drawable/ripple_list_red"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="请假"
+                    android:textColor="#ff757575"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="3次"
+                    android:textColor="#ff757575" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ffe5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="47.0dip"
+                android:background="@drawable/ripple_list_red"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="迟到"
+                    android:textColor="#ff757575"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="1次"
+                    android:textColor="#ff757575" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ffe5e5e5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

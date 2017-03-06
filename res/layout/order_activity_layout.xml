@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/title_color" >
+
+        <ImageView
+            android:id="@+id/regis_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_back_normal" />
+
+        <TextView
+            android:id="@+id/regis_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的订单"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/main_srl_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/lv_unpay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#ffe5e5e5"
+            android:dividerHeight="0.5dip"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_no_order"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="#ffffffff"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/no_order_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28.0dip"
+            android:lineSpacingExtra="4.0dip"
+            android:text="亲~ 您还没有相关订单"
+            android:textColor="#ffbfbfbf"
+            android:textSize="16.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

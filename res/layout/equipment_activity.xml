@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_activity_pop"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/title_color" >
+
+        <TextView
+            android:id="@+id/sale_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的工作"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@+id/regis_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_back_normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="160.0dip"
+        android:orientation="vertical" >
+
+        <com.zorgoom.zhihework.base.ImageCycleView
+            android:id="@+id/main_imageView03"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/equipment_banner" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="270.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/bt1"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <ImageButton
+                    android:id="@+id/bt1_ib1"
+                    android:layout_width="70.0dip"
+                    android:layout_height="70.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/equipment_guest" />
+
+                <TextView
+                    android:id="@+id/bt1_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="访客通行"
+                    android:textColor="#ff757575"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt2"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <ImageButton
+                    android:id="@+id/bt2_ib2"
+                    android:layout_width="70.0dip"
+                    android:layout_height="70.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/equipment_call" />
+
+                <TextView
+                    android:id="@+id/bt2_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="工作对讲"
+                    android:textColor="#ff757575"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+
+            <RelativeLayout
+                android:id="@+id/bt3"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <ImageButton
+                    android:id="@+id/bt3_ib3"
+                    android:layout_width="70.0dip"
+                    android:layout_height="70.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/equipment_huanjing" />
+
+                <TextView
+                    android:id="@+id/bt3_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="环境指数"
+                    android:textColor="#ff757575"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt4"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <ImageButton
+                    android:id="@+id/bt4_ib4"
+                    android:layout_width="70.0dip"
+                    android:layout_height="70.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/equipment_check" />
+
+                <TextView
+                    android:id="@+id/bt4_tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="巡更"
+                    android:textColor="#ff757575"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

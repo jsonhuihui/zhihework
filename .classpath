@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/rtcsdk.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/android-support-v4.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/gson-2.2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/jpush-android-2.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/xUtils-2.6.14.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/media-native.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/poppyview.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_WeiXin_1.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_WeiXin_2.jar"/>
+	<classpathentry kind="lib" path="libs/SMSSDK-2.1.2.jar"/>
+	<classpathentry kind="lib" path="libs/MobCommons-2016.0921.1136.jar"/>
+	<classpathentry kind="lib" path="libs/MobTools-2016.0921.1136.jar"/>
+	<classpathentry kind="lib" path="libs/zxing.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

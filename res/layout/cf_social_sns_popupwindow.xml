@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100.0dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/demo_social_sns_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/digBtn"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="赞"
+        android:textColor="#ffd2d2d2" />
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginTop="2.0dip"
+        android:background="#ff707070" />
+
+    <TextView
+        android:id="@+id/commentBtn"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="评论"
+        android:textColor="#ffd2d2d2" />
+
+</LinearLayout>

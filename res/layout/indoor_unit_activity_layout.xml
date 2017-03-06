@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="#ff2f2f2f" >
+
+        <ImageView
+            android:id="@+id/regis_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_back_normal" />
+
+        <TextView
+            android:id="@+id/sale_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的智能主机"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_layout"
+        android:background="#ff434350"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:text="请谨慎操作室内机"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100.0dip"
+            android:layout_height="130.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80.0dip"
+            android:background="@drawable/shineiji_bg" />
+
+        <TextView
+            android:id="@+id/chushihua"
+            android:layout_width="260.0dip"
+            android:layout_height="50.0dip"
+            android:layout_below="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/chushihua"
+            android:gravity="center"
+            android:text="室内机初始化"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/chongzhi"
+            android:layout_width="260.0dip"
+            android:layout_height="50.0dip"
+            android:layout_below="@+id/chushihua"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/chongzhi"
+            android:gravity="center"
+            android:text="重置室内机密码"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

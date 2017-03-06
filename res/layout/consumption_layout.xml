@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_activity_pop"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/title_color" >
+
+        <TextView
+            android:id="@+id/sale_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的消费"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@+id/regis_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_back_normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="160.0dip"
+        android:orientation="vertical" >
+
+        <com.zorgoom.zhihework.base.ImageCycleView
+            android:id="@+id/main_imageView03"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/consumption_banner" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/consumption"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <ImageButton
+                    android:id="@+id/consumption_ib1"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30.0dip"
+                    android:background="@drawable/consumption_saoyisao" />
+
+                <TextView
+                    android:id="@+id/consumption_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="25.0dip"
+                    android:text="扫一扫"
+                    android:textColor="#ff757575"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:background="#ffe5e5e5" />
+
+            <RelativeLayout
+                android:id="@+id/consumption2"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <ImageButton
+                    android:id="@+id/consumption2_ib2"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30.0dip"
+                    android:background="@drawable/consumption_pay" />
+
+                <TextView
+                    android:id="@+id/consumption2_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="25.0dip"
+                    android:text="付款"
+                    android:textColor="#ff757575"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#ffe5e5e5" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/consumption3"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <ImageButton
+                    android:id="@+id/consumption3_ib3"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30.0dip"
+                    android:background="@drawable/consumption_count" />
+
+                <TextView
+                    android:id="@+id/consumption3_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="25.0dip"
+                    android:text="账户查询"
+                    android:textColor="#ff757575"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:background="#ffe5e5e5" />
+
+            <RelativeLayout
+                android:id="@+id/consumption4"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" >
+
+                <ImageButton
+                    android:id="@+id/consumption4_ib4"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30.0dip"
+                    android:background="@drawable/bag" />
+
+                <TextView
+                    android:id="@+id/consumption4_tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="25.0dip"
+                    android:text="余额"
+                    android:textColor="#ff757575"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#ffe5e5e5" />
+    </LinearLayout>
+
+</LinearLayout>

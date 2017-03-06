@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ripple_list_red" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginBottom="20.0dip">
+        <ImageView android:id="@+id/sale_item_imageView01" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/relativeLayout1" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="70.0dip" android:layout_toRightOf="@+id/sale_item_imageView01">
+            <TextView android:textSize="15.0sp" android:textColor="#ff202020" android:gravity="center_vertical" android:id="@+id/sale_item_textView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="本地鸡排本地鸡排本地鸡排" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff808080" android:id="@+id/sale_item_textView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="库存 30" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/sale_left_select_text_color" android:id="@+id/sale_item_textView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="￥ 15" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/add_minus" android:background="@drawable/minus2" android:padding="10.0dip" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff373737" android:layout_gravity="center_vertical" android:id="@+id/tv_num" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <ImageView android:id="@+id/add_car" android:background="@drawable/add" android:padding="10.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

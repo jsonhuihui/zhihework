@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/ripple_list_red" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip">
+        <ImageView android:id="@+id/iv_goods_photo" android:visibility="gone" android:layout_width="59.0dip" android:layout_height="65.0dip" android:layout_marginRight="5.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff373737" android:ellipsize="end" android:id="@+id/tv_goods_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="60.0dip" android:text="FANCI" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@+id/iv_goods_photo" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff7d7d7d" android:ellipsize="end" android:id="@+id/tv_goods_specifications" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="60.0dip" android:text="FANCI镶施华洛世黄金足金戒指FANCI镶施华洛世黄金足金戒指FANCI镶施华洛世黄金足金戒指" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@+id/iv_goods_photo" android:layout_below="@+id/tv_goods_name" />
+        <TextView android:textSize="11.0sp" android:typeface="serif" android:textColor="#ff7d7d7d" android:id="@+id/tv_goods_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥1829" android:layout_alignParentRight="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff7d7d7d" android:id="@+id/tv_goods_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

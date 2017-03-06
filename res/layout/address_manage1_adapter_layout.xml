@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ripple_list_red"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12.0dip"
+        android:layout_toLeftOf="@+id/more"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/x1" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3.0dip"
+                android:lineSpacingExtra="4.0dip"
+                android:text=""
+                android:textColor="#ff373737" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="14.0dip"
+                android:background="@drawable/x2" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3.0dip"
+                android:text="18788545455"
+                android:textColor="#ff373737" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginTop="5.0dip"
+            android:lineSpacingExtra="4.0dip"
+            android:text=""
+            android:textColor="#ff373737" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rel_setdefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/cb_setdefault"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/cart_checkbox" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/cb_setdefault"
+                    android:lineSpacingExtra="4.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:text="默认地址"
+                    android:textColor="#ff373737"
+                    android:textSize="12.0dip" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15.0dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/lin_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/x4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="15.0dip"
+                        android:lineSpacingExtra="4.0dip"
+                        android:text="修改"
+                        android:textColor="#ffd4cfd3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/x5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="删除"
+                        android:textColor="#ffd4cfd3" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/theme_color"
+        android:paddingRight="20.0dip" >
+
+        <ImageView
+            android:id="@+id/regis_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_back_normal" />
+
+        <TextView
+            android:id="@+id/login_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="房屋租赁详情"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/q_black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="15.0dip" >
+
+        <ScrollView
+            android:id="@+id/scrollView_showMessages"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/message_detail_textView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10.0dip"
+                    android:text="深圳市百花园小区"
+                    android:textColor="#ff505050"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/message_detail_textView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10.0dip"
+                    android:text="发布于 2016/11/28"
+                    android:textColor="#fffc3838"
+                    android:textSize="13.0sp" />
+
+                <TextView
+                    android:id="@+id/message_detail_textView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="10.0dip"
+                    android:text="房屋户型：2房一厅"
+                    android:textColor="#ff808080"
+                    android:textSize="13.0sp" />
+
+                <TextView
+                    android:id="@+id/message_detail_textView08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="10.0dip"
+                    android:text="房屋面积：80 m²"
+                    android:textColor="#ff808080"
+                    android:textSize="13.0sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/message_detail_textView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingBottom="10.0dip"
+                    android:text="标题"
+                    android:textColor="#ff808080"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/message_detail_textView07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingBottom="10.0dip"
+                    android:text="内容"
+                    android:textColor="#ff808080"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

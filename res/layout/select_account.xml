@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/main_srl_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="180.0dip"
+                android:background="@color/title_color" >
+
+                <RelativeLayout
+                    android:id="@+id/main_RelativeLayout01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:background="@color/title_color" >
+
+                    <TextView
+                        android:id="@+id/sale_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="账户查询"
+                        android:textColor="#ffffffff"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:id="@+id/regis_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/base_action_bar_back_normal" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_RelativeLayout01"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="账户金额（元）"
+                    android:textColor="#ffd9d9d9"
+                    android:textSize="17.0sp" />
+
+                <TextView
+                    android:id="@+id/account_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30.0dip"
+                    android:text=""
+                    android:textColor="#ffffffff"
+                    android:textSize="50.0sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/account_rl1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70.0dip"
+                    android:background="@drawable/ripple_list_red"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="我的订单"
+                        android:textColor="#ff000000"
+                        android:textSize="23.0sp" />
+
+                    <TextView
+                        android:id="@+id/me_text03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/notice_03"
+                        android:gravity="right|center"
+                        android:paddingLeft="20.0dip" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#ffe5e5e5" />
+
+                <RelativeLayout
+                    android:id="@+id/account_rl2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70.0dip"
+                    android:background="@drawable/ripple_list_red"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="就餐统计"
+                        android:textColor="#ff000000"
+                        android:textSize="23.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView03"
+                        android:drawableRight="@drawable/notice_03"
+                        android:gravity="right|center"
+                        android:paddingLeft="20.0dip" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#ffe5e5e5" />
+
+                <RelativeLayout
+                    android:id="@+id/account_rl3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70.0dip"
+                    android:background="@drawable/ripple_list_red"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="充值查询"
+                        android:textColor="#ff000000"
+                        android:textSize="23.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/notice_03"
+                        android:gravity="right|center"
+                        android:paddingLeft="20.0dip" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#ffe5e5e5" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

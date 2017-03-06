@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="240.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bt_bg5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12.0dip"
+            android:text="拨号规则：楼栋号+房屋号，比如拨打2栋101室的用户，楼栋号不足两位的前面多加0，房间号不足4位多加0，拨号020101"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

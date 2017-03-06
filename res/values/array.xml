@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="languages">
+        <item>建议</item>
+        <item>投诉</item>
+    </string-array>
+
+</resources>

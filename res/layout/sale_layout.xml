@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/main_activity_pop" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/main_RelativeLayout01" android:background="#ff2f2f2f" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@+id/sale_register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="社区商圈" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/main_srl_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@+id/main_RelativeLayout01">
+        <ScrollView android:id="@+id/sv_sale" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="160.0dip">
+                    <com.zorgoom.zhihework.base.ImageCycleView android:id="@+id/main_imageView03" android:background="@drawable/zly2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="80.0dip">
+                    <RelativeLayout android:orientation="vertical" android:id="@+id/sale_1" android:background="@drawable/ripple_list_red" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:id="@+id/iv" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/youhuiquan" android:layout_centerVertical="true" />
+                            <TextView android:textSize="16.0sp" android:textColor="#fffb5606" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="优惠活动" android:layout_toRightOf="@+id/iv" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ff6f6f6f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="2.0dip" android:text="赠饮，打折应有尽有" android:layout_toRightOf="@+id/iv" android:layout_below="@+id/tv" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <View android:background="#ffe5e5e5" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:orientation="vertical" android:id="@+id/sale_2" android:background="@drawable/ripple_list_red" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:id="@+id/iv1" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/tuangou" android:layout_centerVertical="true" />
+                            <TextView android:textSize="16.0sp" android:textColor="#ff7aab04" android:id="@+id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="优惠活动" android:layout_toRightOf="@+id/iv1" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ff6f6f6f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="2.0dip" android:text="查看附近团购" android:layout_toRightOf="@+id/iv1" android:layout_below="@+id/tv1" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+                <ListView android:id="@+id/sale_listView1" android:background="#ffffffff" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ffe5e5e5" android:dividerHeight="0.5dip" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

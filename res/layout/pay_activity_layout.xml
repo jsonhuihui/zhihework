@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/title_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@+id/regis_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/base_action_bar_back_normal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@+id/regis_register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账户充值" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/wx_pay" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:background="@drawable/z3" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff373737" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信充值" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true" android:lineSpacingExtra="4.0dip" />
+        <ImageView android:id="@+id/wx_iv" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/checkbox_false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/zfb_pay" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon2" android:background="@drawable/logo" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff373737" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付宝充值" android:layout_toRightOf="@+id/icon2" android:layout_centerVertical="true" android:lineSpacingExtra="4.0dip" />
+        <ImageView android:id="@+id/zfb_iv" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/checkbox_false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+    <EditText android:textSize="15.0sp" android:gravity="center" android:id="@+id/money" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="    按需输入充值金额，最低100" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="numberDecimal" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="10.0sp" android:textColor="#ff757575" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:text="     点击去充值，即表示已阅读并同意(充值协议 )智核工作不会以任何形式要求您输入银行账户和密码" android:lines="2" android:layout_above="@+id/login_textView04" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/login_textView04" android:background="@drawable/ripple_click_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="下一步" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

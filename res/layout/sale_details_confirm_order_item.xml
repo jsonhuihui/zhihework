@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ripple_list_red" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff2f2f2f" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="餐盒费" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff808080" android:id="@+id/num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x1" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff2f2f2f" android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="￥3" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

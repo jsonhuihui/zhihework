@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/title_color"
+        android:paddingRight="20.0dip" >
+
+        <ImageView
+            android:id="@+id/regis_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/base_action_bar_back_normal" />
+
+        <TextView
+            android:id="@+id/login_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="部门认证"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/my_set_adresschoose_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yy_myset_shouhuo01" >
+
+            <TextView
+                android:id="@+id/my_set_adresschoose_textview_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center_vertical"
+                android:text="请选择  公司/其他..."
+                android:textColor="#fff86604"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/my_set_adresschoose_listview_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@null"
+            android:divider="@drawable/button_line"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_set_adresschoose_2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yy_myset_shouhuo01" >
+
+            <TextView
+                android:id="@+id/my_set_adresschoose_textview_2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center_vertical"
+                android:text="请选择  部门/其他..."
+                android:textColor="#fff86604"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yy_myset_shouhuo03" >
+
+            <TextView
+                android:id="@+id/my_set_adresschoose_sheng_2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center_vertical"
+                android:text="研发部"
+                android:textColor="#ff36428c"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/my_set_adresschoose_listview_2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@null"
+            android:divider="@drawable/button_line"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>
