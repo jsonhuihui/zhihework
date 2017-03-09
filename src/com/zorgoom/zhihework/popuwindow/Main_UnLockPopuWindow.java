@@ -62,8 +62,8 @@ public class Main_UnLockPopuWindow extends PopupWindow
 		setContentView(view);
 		setHeight(hei1);
 		setWidth(LayoutParams.FILL_PARENT);
-		setFocusable(true);
-		setOutsideTouchable(true);
+		setFocusable(false);
+		setOutsideTouchable(false);
 		setAnimationStyle(R.style.mypopwindow_anim_style);
 		setBackgroundDrawable(new BitmapDrawable());
 		setOnDismissListener(this);

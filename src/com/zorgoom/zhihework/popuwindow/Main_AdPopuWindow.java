@@ -37,8 +37,8 @@ public class Main_AdPopuWindow extends PopupWindow implements OnClickListener, H
 		setContentView(view);
 		setHeight(hei);
 		setWidth(LayoutParams.FILL_PARENT);
-		setFocusable(true);
-		setOutsideTouchable(true);
+		setFocusable(false);
+		setOutsideTouchable(false);
 		setBackgroundDrawable(new BitmapDrawable());
 		setAnimationStyle(R.style.mypopwindow_anim_style1);
 		showAtLocation(parent, Gravity.TOP, 0, 0);
