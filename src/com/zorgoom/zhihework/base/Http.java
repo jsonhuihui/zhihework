@@ -110,6 +110,7 @@ public class Http {
 	public static final String FINDUNIT = SERVLET_URL + "appcity/findUnit.do?";
 	// 开门记录
 	public static final String FINDACCESS = SERVLET_URL + "appcity/findAccess.do?";
+	
 
 	/***************************************** 商圈o2o ********************************************************************/
 
